@@ -81,13 +81,6 @@ const ChatBot = () => {
           sender: "bot",
           text: "⏳ Submitting your details...",
         });
-
-        // try {
-        //   await fetch("http://localhost:5000/api/book-demo", {
-        //     method: "POST",
-        //     headers: { "Content-Type": "application/json" },
-        //     body: JSON.stringify(updatedData),
-        //   });
             try {
               await fetch('/api/book-demo', {
                method: 'POST',
@@ -295,5 +288,7 @@ const styles = {
     cursor: "pointer",
   },
 };
+
+}; // Close the ChatBot component
 
 export default ChatBot;
