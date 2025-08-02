@@ -94,10 +94,7 @@ const ChatBot = () => {
                  headers: { 'Content-Type': 'application/json' },
                   body: JSON.stringify(updatedData),
              });
-            // handle success
-             } catch (error) {
-             // handle error
-            }
+            
           newChat.push({
             sender: "bot",
             text: "✅ Thank you! We'll get in touch shortly.",
@@ -200,7 +197,7 @@ const ChatBot = () => {
       )}
     </>
   );
-};
+;
 
 const styles = {
   floatingButton: {
